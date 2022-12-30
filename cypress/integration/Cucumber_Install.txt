@@ -1,0 +1,18 @@
+1)go site cypress cucucmber preprocessor
+
+ 2-)npm install --save-dev cypress-cucumber-preprocessor
+
+ 3)const cucumber = require('cypress-cucumber-preprocessor').default
+
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber())
+} ________>past on plugin
+
+4){
+  "testFiles": "**/*.feature"
+}---------->past on cypress.json
+
+5)
+  "cypress-cucumber-preprocessor": {
+  "nonGlobalStepDefinitions": true
+} past on package.json ------>>>_---->>>>_------>>>>-------<>_<<<>-<<<past on package .json
